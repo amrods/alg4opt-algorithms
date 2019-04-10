@@ -1,4 +1,5 @@
 #! algorithm 4.4 of Kochenderfer & Wheeler (2019)
+
 function trust_region_descent(f, ∇f, H, x, k_max; η1=0.25, η2=0.5, γ1=0.5, γ2=2.0, δ=1.0)
 	y = f(x)
 	for k in 1 : k_max
@@ -17,6 +18,7 @@ function trust_region_descent(f, ∇f, H, x, k_max; η1=0.25, η2=0.5, γ1=0.5, 
 end
 
 using Convex
+const ⋅ = dot
 function solve_trust_region_subproblem(∇f, H, x0, δ)
 	x = Variable(length(x0))
 	p = Convex.minimize(∇f(x0)⋅(x-x0) + quadform(x-x0, H(x0))/2)
