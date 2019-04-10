@@ -1,4 +1,4 @@
-#! algorithm 4.1 of Kochenderfer & Wheeler (2019) with some modifications
+#! algorithm 4.1 of Kochenderfer & Wheeler (2019)
 
 function line_search(f, x, d)
     if norm(d) ≈ 0; return x; end; objective = α -> f(x + α*d)
