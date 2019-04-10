@@ -1,4 +1,4 @@
-# algorithm 7.8 of Kochenderfer & Wheeler (2019)
+#! algorithm 7.8 of Kochenderfer & Wheeler (2019)
 
 function direct(f, a, b, ϵ, k_max)
     g = reparameterize_to_unit_hypercube(f, a, b)
