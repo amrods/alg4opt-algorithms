@@ -18,7 +18,10 @@ function trust_region_descent(f, ∇f, H, x, k_max; η1=0.25, η2=0.5, γ1=0.5, 
 end
 
 using Convex
+using SCS
+
 const ⋅ = dot
+
 function solve_trust_region_subproblem(∇f, H, x0, δ)
 	x = Variable(length(x0))
 	p = Convex.minimize(∇f(x0)⋅(x-x0) + quadform(x-x0, H(x0))/2)
