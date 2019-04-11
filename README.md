@@ -6,3 +6,4 @@ Here will reside the algorithms presented in Kochenderfer & Wheeler (2019). This
 Sometimes I modify the algorithms to make them able to run in the Julia versions I run. Sometimes, I modify them to add some functionality.
 
 One of the authors maintains a comprehensive repo: https://github.com/tawheeler/alg4opt_test.jl
+Jupyter notebooks are also available: https://github.com/sisl/algforopt-notebooks
