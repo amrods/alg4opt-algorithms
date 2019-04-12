@@ -20,8 +20,6 @@ end
 using Convex
 using SCS
 
-const ⋅ = dot
-
 function solve_trust_region_subproblem(∇f, H, x0, δ)
 	x = Variable(length(x0))
 	p = Convex.minimize(∇f(x0)⋅(x-x0) + quadform(x-x0, H(x0))/2)
