@@ -7,3 +7,5 @@ Sometimes I modify the algorithms to make them able to run in the Julia versions
 
 One of the authors maintains a comprehensive repo: https://github.com/tawheeler/alg4opt_test.jl
 Jupyter notebooks are also available: https://github.com/sisl/algforopt-notebooks
+
+Errata for the book is here: https://github.com/sisl/algforopt-errata
